@@ -27,9 +27,10 @@ const Navbar = () => {
       align="center"
       justify="space-between"
       wrap="wrap"
-      padding=".75rem"
+      padding=".75rem 2rem"
       bg="white"
       color="black"
+      boxShadow="5px 5px 5px 10px rgba(0,0,0,.8)"
     >
       <Flex align="center" mr={5}>
         <Image src="/logo.png" alt="Logo" boxSize="40px" />
@@ -61,8 +62,7 @@ const Navbar = () => {
             mr={2}
             _hover={{ textDecoration: "none", color: "teal.300" }}
             transition="0.3s"
-            fontSize={19}
-            fontWeight={600}
+            fontSize={16}
           >
             Home
           </Link>
@@ -72,8 +72,7 @@ const Navbar = () => {
             mr={2}
             _hover={{ textDecoration: "none", color: "teal.300" }}
             transition="0.3s"
-            fontSize={19}
-            fontWeight={600}
+            fontSize={16}
           >
             About
           </Link>
@@ -83,23 +82,28 @@ const Navbar = () => {
             mr={4}
             _hover={{ textDecoration: "none", color: "teal.300" }}
             transition="0.3s"
-            fontSize={19}
-            fontWeight={600}
+            fontSize={16}
           >
             Contact Us
           </Link>
         </NextLink>
       </Box>
 
-      <Box display={{ base: "none", md: "flex" }}>
-        <Button colorScheme="teal" mr={2}>
-          Log In
-        </Button>
-        <Button colorScheme="teal" bg="black">
-          {" "}
-          {/* Add bg="black" here */}
-          Sign Up
-        </Button>
+      <Box gap={2} display={{ base: "none", md: "flex" }}>
+        <NextLink href="/signin" passHref>
+          <Link>
+            <Button colorScheme="teal" bg="black">
+              Log In
+            </Button>
+          </Link>
+        </NextLink>
+        <NextLink href="/signup" passHref>
+          <Link>
+            <Button colorScheme="teal" bg="black">
+              Sign Up
+            </Button>
+          </Link>
+        </NextLink>
       </Box>
 
       {/* Sidebar for mobile view */}
@@ -116,7 +120,6 @@ const Navbar = () => {
                   onClick={onClose}
                   _hover={{ textDecoration: "none", color: "teal.300" }}
                   transition="0.3s"
-                  fontWeight={600}
                 >
                   Home
                 </Link>
@@ -127,7 +130,6 @@ const Navbar = () => {
                   onClick={onClose}
                   _hover={{ textDecoration: "none", color: "teal.300" }}
                   transition="0.3s"
-                  fontWeight={600}
                 >
                   About
                 </Link>
@@ -138,31 +140,34 @@ const Navbar = () => {
                   onClick={onClose}
                   _hover={{ textDecoration: "none", color: "teal.300" }}
                   transition="0.3s"
-                  fontWeight={600} 
                 >
                   Contact Us
                 </Link>
               </NextLink>
+            </Box>
+            <Box gap={2} mt="5">
               <Button
                 colorScheme="teal"
-                mb={2}
                 onClick={onClose}
                 _hover={{ textDecoration: "none", color: "teal.300" }}
                 transition="0.3s"
-                fontWeight={600}
+                mr={3}
               >
                 Log In
               </Button>
-              <Button
-                colorScheme="teal"
-                onClick={onClose}
-                _hover={{ textDecoration: "none", color: "teal.300" }}
-                transition="0.3s"
-                fontWeight={600}
-                bg="black"
-              >
-                Sign Up
-              </Button>
+              <NextLink href="/signin" passHref>
+                <Link>
+                  <Button
+                    colorScheme="teal"
+                    onClick={onClose}
+                    _hover={{ textDecoration: "none", color: "teal.300" }}
+                    transition="0.3s"
+                    bg="black"
+                  >
+                    Sign Up
+                  </Button>
+                </Link>
+              </NextLink>
             </Box>
           </DrawerBody>
         </DrawerContent>

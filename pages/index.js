@@ -1,8 +1,13 @@
 // index.js
 import Head from "next/head";
 import Navbar from "../components/Navbar";
+import ToastMessage from "@/components/ToastMessage";
+import { useState } from "react";
+import HeroSection from "@/components/HeroSection";
+import Footer from "@/components/Footer";
 
 const Home = () => {
+  const [showToast, setShowToast] = useState(true);
   return (
     <div>
       <Head>
@@ -17,10 +22,15 @@ const Home = () => {
 
       <Navbar />
 
-      <main>
-        <h1>Welcome to your Women's Health App</h1>
-        {/* Add your home page content here */}
-      </main>
+      {showToast && (
+        <ToastMessage
+          message="Babylon US clinical services and appointments are no longer available. For details about your health plan benefits and to find a new provider, contact your health plan."
+          onClose={() => setShowToast(false)}
+        />
+      )}
+
+      <HeroSection />
+      <Footer />
     </div>
   );
 };

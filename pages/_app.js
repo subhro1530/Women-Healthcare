@@ -5,8 +5,8 @@ import Navbar from "../components/Navbar";
 
 const theme = extendTheme({
   fonts: {
-    body: "'Smooch Sans', sans-serif",
-    heading: "'Smooch Sans', sans-serif",
+    body: "'Poppins', sans-serif", // Change to Poppins font
+    heading: "'Poppins', sans-serif", // Change to Poppins font
   },
 });
 
