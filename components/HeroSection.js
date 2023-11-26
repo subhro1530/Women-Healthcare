@@ -1,17 +1,39 @@
 // components/HeroSection.js
-import { Box, Flex, Heading, Button } from "@chakra-ui/react";
+import { Box, Flex, Heading, Button, keyframes } from "@chakra-ui/react";
+import Image from "next/image";
+
+const moveImage = keyframes`
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+`;
 
 const HeroSection = () => {
+  const imageStyles = {
+    width: { base: "80vw", md: "80%" },
+    height: { base: "150px", md: "300px" },
+    objectFit: "cover",
+    boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+    transform: "translate(0, 0)",
+    transition: "transform 1s ease",
+    animation: `${moveImage} 3s infinite`,
+  };
   return (
     <Box
-      bgImage="url('https://wallpaperaccess.com/full/1586337.jpg')" // Replace with the actual URL of your background image
+      bgImage="url('https://4kwallpapers.com/images/wallpapers/samsung-galaxy-note10-bubble-pink-stock-android-10-2560x1080-732.jpg')" // Replace with the actual URL of your background image
       bgSize="cover"
       bgPosition="center"
       bgRepeat="no-repeat"
       width="100vw"
-      //   height="84vh" // Set the desired height
+      //   height="84vh" // Set the desi#d62a7a height
       position="relative"
-      padding="15vh 0"
+      padding="14vh 0"
     >
       <Flex
         direction={{ base: "column", md: "row" }}
@@ -31,7 +53,7 @@ const HeroSection = () => {
             mb="4"
             fontWeight="bold"
             width={{ base: "80vw", md: "40vw" }} // Adjusted width for mobile and desktop
-            bgGradient="linear(to-r, red, black)" // Added linear gradient
+            bgGradient="linear(45deg, #d62a7a, cyan.700)" // Added linear gradient
             bgClip="text"
           >
             Your Women's Health Journey Starts Here
@@ -39,9 +61,9 @@ const HeroSection = () => {
           <Box
             fontSize="16px"
             color="teal.900"
-            width={{ base: "80vw", md: "40vw" }} // Adjusted width for mobile and desktop
+            width={{ base: "80vw", md: "35vw" }} // Adjusted width for mobile and desktop
             mb={3}
-            bgGradient="linear(to-r, black, red)" // Added linear gradient
+            bgGradient="linear(45deg, cyan.700, #d62a7a)" // Added linear gradient
             bgClip="text"
           >
             Connect with a women's health doctor whenever you need. You can
@@ -50,18 +72,27 @@ const HeroSection = () => {
             services are available to you 24/7.
           </Box>
           <Button
-            bg="black"
+            backgroundImage="linear(45deg, cyan.700, #d62a7a)"
             color="white"
-            border="1px solid black"
+            bgColor="blue"
             transition="0.3s"
             _hover={{
-              color: "black",
-              bg: "#e1e3e8",
-              border: "1px solid black",
+              color: "white",
+              bg: "linear(40deg, #d62a7a,cyan.700)",
+              border: "none",
+              transform: "scale(1.1)",
             }}
           >
             Explore
           </Button>
+        </Box>
+        <Box boxShadow="10px 10px 20px 10px rgba(0,0,0,.4)"> 
+          <Image
+            style={imageStyles}
+            src="/hero_pic.jpg"
+            height={400}
+            width={600}
+          ></Image>
         </Box>
       </Flex>
     </Box>

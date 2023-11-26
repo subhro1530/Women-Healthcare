@@ -1,17 +1,43 @@
 // index.js
 import Head from "next/head";
-import Navbar from "../components/Navbar";
-import ToastMessage from "@/components/ToastMessage";
 import { useState } from "react";
-import HeroSection from "@/components/HeroSection";
-import Footer from "@/components/Footer";
+// import Navbar from "../components/Navbar";
+// import ToastMessage from "@/components/ToastMessage";
+// import HeroSection from "@/components/HeroSection";
+// import Footer from "@/components/Footer";
+// import Details from "@/components/Details";
+// import SubNavbar from "@/components/SubNavbar";
+// import FAQ from "@/components/FAQ";
+import dynamic from "next/dynamic";
+const Navbar = dynamic(() => import("@/components/Navbar"), {
+  ssr: false,
+});
+const Footer = dynamic(() => import("@/components/Footer"), {
+  ssr: false,
+});
+const HeroSection = dynamic(() => import("@/components/HeroSection"), {
+  ssr: false,
+});
+const Details = dynamic(() => import("@/components/Details"), {
+  ssr: false,
+});
+const SubNavbar = dynamic(() => import("@/components/SubNavbar"), {
+  ssr: false,
+});
+const ToastMessage = dynamic(() => import("@/components/ToastMessage"), {
+  ssr: false,
+});
+const FAQ = dynamic(() => import("@/components/FAQ"), {
+  ssr: false,
+});
 
 const Home = () => {
   const [showToast, setShowToast] = useState(true);
+
   return (
     <div>
       <Head>
-        <title>Your Women's Health App</title>
+        <title>Home | FemWellCare</title>
         <meta name="description" content="Your app description here" />
         <link rel="icon" href="/favicon.ico" />
         <link
@@ -21,15 +47,17 @@ const Home = () => {
       </Head>
 
       <Navbar />
-
+      <SubNavbar />
       {showToast && (
         <ToastMessage
-          message="Babylon US clinical services and appointments are no longer available. For details about your health plan benefits and to find a new provider, contact your health plan."
+          message="Welcome to FemWellCare. We are upgrading ourselves to manage a platform which is available throughout the globe to meet high demands."
           onClose={() => setShowToast(false)}
         />
       )}
 
       <HeroSection />
+      <Details />
+      <FAQ />
       <Footer />
     </div>
   );

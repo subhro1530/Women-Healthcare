@@ -1,5 +1,5 @@
 // Footer.js
-import { Box, Flex, Link, IconButton } from "@chakra-ui/react";
+import { Box, Flex, Link, IconButton, Input, Button } from "@chakra-ui/react";
 import {
   FaHome,
   FaInfoCircle,
@@ -18,6 +18,38 @@ const Footer = () => {
       px={{ base: "4", md: "10" }}
       textAlign="center"
     >
+      {/* Subscription Section */}
+      <Flex
+        justify={{ base: "center", md: "space-between" }}
+        align="center"
+        flexWrap={{ base: "wrap", md: "nowrap" }}
+        mb={{ base: "6", md: "4" }}
+      >
+        <Input
+          outline="none"
+          type="email"
+          placeholder="Email to subscribe to our newsletter"
+          color="white"
+          border="1px solid grey"
+          bg="transparent"
+          _placeholder={{ color: "white" }}
+          borderRadius="md"
+          p="2"
+          mb={{ base: "2", md: "0" }}
+        />
+        <Button
+          color="black"
+          bg="white"
+          border="1px solid grey"
+          _hover={{ bg: "transparent", color: "white" }}
+          borderRadius="md"
+          px="4"
+        >
+          Subscribe
+        </Button>
+      </Flex>
+
+      {/* Navigation Links */}
       <Flex justify="space-between" align="center" flexWrap="wrap">
         <Link
           href="/"
@@ -106,8 +138,7 @@ const Footer = () => {
 
       <Box mt="4">
         <p>
-          &copy; {new Date().getFullYear()} Your Company Name. All rights
-          reserved.
+          &copy; {new Date().getFullYear()} FemWellCare. All rights reserved.
         </p>
         <p>Created by</p>
         <Link

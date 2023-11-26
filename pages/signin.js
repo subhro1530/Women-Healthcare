@@ -25,6 +25,15 @@ const SignIn = () => {
 
   return (
     <>
+      <Head>
+        <title>Home | FemWellCare</title>
+        <meta name="description" content="Your app description here" />
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;700&display=swap"
+        />
+      </Head>
       <Navbar />
       <Box
         bgColor="black"

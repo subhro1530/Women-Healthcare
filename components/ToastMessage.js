@@ -9,15 +9,15 @@ const ToastMessage = ({ message, onClose }) => {
       left="0"
       width="100%"
       zIndex="999"
-      bgColor="black"
+      bgColor="#d62a7a"
       color="white"
-      fontSize="18px"
+      fontSize="17px"
       fontWeight="normal"
       display="flex"
       justifyContent="space-between"
       alignItems="center"
     >
-      <Box padding="20px 50px">{message}</Box>
+      <Box padding="10px 50px">{message}</Box>
       <CloseButton onClick={onClose} />
     </Box>
   );
