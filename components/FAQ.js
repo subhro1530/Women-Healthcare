@@ -56,9 +56,9 @@ const FAQ = () => {
     },
     {
       question:
-        "Are there specific exercises or dietary recommendations for women's health?",
+        "Are there specific exercises or dietary recommendations for women s health?",
       answer:
-        "Regular aerobic exercise, strength training, and flexibility exercises benefit women's health. A balanced diet rich in fruits, vegetables, lean proteins, and whole grains supports overall well-being.",
+        "Regular aerobic exercise, strength training, and flexibility exercises benefit women s health. A balanced diet rich in fruits, vegetables, lean proteins, and whole grains supports overall well-being.",
     },
     {
       question:
@@ -94,7 +94,7 @@ const FAQ = () => {
       flexDirection="column"
     >
       <Heading fontSize="5xl" mb={4}>
-        FAQ's
+        FAQ s
       </Heading>
 
       {questionsAndAnswers.map((item, index) => (
