@@ -74,7 +74,8 @@ const SignIn = () => {
             display="flex"
             border="1px solid cyan"
             borderRadius={50}
-            width="20%"
+            width={{base:"15%",md:"20%"}}
+            overflow="hidden"
             alignItems="center"
             mb={10}
             padding="5px 10px"
@@ -87,6 +88,7 @@ const SignIn = () => {
             <Button
               bgColor="transparent"
               color="white"
+              display={{base:"none",md:"block"}}
               // mb={4}
               _hover={{ bgColor: "transparent" }}
             >

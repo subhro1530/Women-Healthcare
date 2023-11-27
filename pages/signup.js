@@ -90,6 +90,7 @@ const SignUp = () => {
               bgColor="transparent"
               color="white"
               // mb={4}
+              display={{ base: "none", md: "block" }}
               _hover={{ bgColor: "transparent" }}
             >
               Sign Up with Google
