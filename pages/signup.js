@@ -16,6 +16,7 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import Head from "next/head";
 
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -27,6 +28,15 @@ const SignUp = () => {
 
   return (
     <>
+      <Head>
+        <title>Sign Up | FemWellCare</title>
+        <meta name="description" content="Your app description here" />
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;700&display=swap"
+        />
+      </Head>
       <Navbar />
       <Box
         bgColor="black"

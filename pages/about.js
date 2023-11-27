@@ -43,11 +43,12 @@ const About = () => {
 
             {/* Paragraph */}
             <Text mb={6} fontSize="lg">
-              FemWellCare is dedicated to advancing women's health through
+              FemWellCare is dedicated to advancing women&apos;s health through
               comprehensive and personalized healthcare solutions. Our
               commitment lies in promoting holistic well-being and ensuring
-              access to essential services tailored for every stage of a woman's
-              life. Trust us to be your partner in health and empowerment.
+              access to essential services tailored for every stage of a
+              woman&apos;s life. Trust us to be your partner in health and
+              empowerment.
             </Text>
 
             {/* Question */}
@@ -57,12 +58,12 @@ const About = () => {
 
             {/* Answer */}
             <Text mb={6} fontSize="lg">
-              Women's healthcare is rooted in essential values that prioritize
-              holistic well-being, inclusivity, and empowerment. Central to this
-              care is respect for autonomy, ensuring women have agency in
-              decisions about their bodies and health choices. Compassion forms
-              another cornerstone, acknowledging the emotional and physical
-              intricacies of women's health experiences.
+              Women&apos;s healthcare is rooted in essential values that
+              prioritize holistic well-being, inclusivity, and empowerment.
+              Central to this care is respect for autonomy, ensuring women have
+              agency in decisions about their bodies and health choices.
+              Compassion forms another cornerstone, acknowledging the emotional
+              and physical intricacies of women&apos;s health experiences.
             </Text>
             <Text mb={6} fontSize="lg">
               Equality stands as a fundamental value, advocating for fair and
@@ -80,10 +81,10 @@ const About = () => {
 
             {/* Additional Text */}
             <Text mb={6} fontSize="lg">
-              Dedicated to caring for women throughout their lifetime, Women’s
-              Health Care provides comprehensive, quality obstetrical and
-              gynecological care with the warmth, responsiveness, and
-              accessibility of a community-based practice.
+              Dedicated to caring for women throughout their lifetime,
+              Women&apos;s Health Care provides comprehensive, quality
+              obstetrical and gynecological care with the warmth,
+              responsiveness, and accessibility of a community-based practice.
             </Text>
           </Box>
         </Flex>

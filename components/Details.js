@@ -49,7 +49,7 @@ const Details = () => {
           mb={10}
           mt={20}
         >
-          WHY WOMEN'S HEALTH CARE?
+          WHY WOMEN&apos;S HEALTH CARE?
         </Heading>
 
         <Flex
@@ -64,27 +64,27 @@ const Details = () => {
             mb={{ base: "4", md: "0" }}
             mr={{ base: "8", md: "4" }}
           >
-            Women's healthcare embodies comprehensive medical support tailored
-            to the distinct needs of women. It encompasses reproductive health,
-            from contraception to fertility and menopause management. Maternal
-            care ensures safe pregnancies and childbirth. Conditions like PCOS,
-            endometriosis, and breast cancer are focal points, advocating early
-            detection through screenings. Yet, it extends beyond physical
-            aspects, acknowledging mental health, including postpartum
-            depression and emotional well-being. This holistic approach
-            integrates societal factors, cultural nuances, and empowerment,
-            striving for inclusivity and advocacy. Women's healthcare aims not
-            just to treat but to educate, empower, and uplift, recognizing and
-            honoring the diverse and intricate journeys of women across the
-            globe. <br />
+            Women&apos;s healthcare embodies comprehensive medical support
+            tailored to the distinct needs of women. It encompasses reproductive
+            health, from contraception to fertility and menopause management.
+            Maternal care ensures safe pregnancies and childbirth. Conditions
+            like PCOS, endometriosis, and breast cancer are focal points,
+            advocating early detection through screenings. Yet, it extends
+            beyond physical aspects, acknowledging mental health, including
+            postpartum depression and emotional well-being. This holistic
+            approach integrates societal factors, cultural nuances, and
+            empowerment, striving for inclusivity and advocacy. Women&apos;s
+            healthcare aims not just to treat but to educate, empower, and
+            uplift, recognizing and honoring the diverse and intricate journeys
+            of women across the globe. <br />
             <br />
             What sets it apart is the emphasis on empowerment, education, and
             advocacy for gender-specific health issues. From promoting menstrual
             hygiene to breaking cultural taboos, it champions inclusivity,
             recognizing the intersectionality of race, ethnicity, socioeconomic
-            status, and gender identity. It's a continuum of care that not only
-            heals but also uplifts, aiming to create a world where every woman
-            feels seen, heard, and supported in her health journey.
+            status, and gender identity. It&apos;s a continuum of care that not
+            only heals but also uplifts, aiming to create a world where every
+            woman feels seen, heard, and supported in her health journey.
           </Text>
 
           <Image
@@ -123,7 +123,7 @@ const Details = () => {
             distance into a doorway for healthcare. The digital realm not only
             breaks geographical barriers but also encourages women to take
             charge of their health, promoting empowerment through information
-            and convenience. Empowering women's healthcare through online
+            and convenience. Empowering women&apos;s healthcare through online
             platforms ensures accessible and convenient services for all.
             Virtual consultations bridge geographical gaps, offering expert
             guidance on reproductive health, menstrual concerns, and maternal
@@ -179,9 +179,9 @@ const Details = () => {
             <br />
             <br />
             <Box color="#cb2e7c">Educational Resources:</Box> Offering
-            informative content, articles, videos, or webinars on women's health
-            topics, empowering individuals with knowledge about their bodies and
-            health issues.
+            informative content, articles, videos, or webinars on women&apos;s
+            health topics, empowering individuals with knowledge about their
+            bodies and health issues.
             <br />
             <br />
             <Box color="#cb2e7c">Remote Monitoring Tools:</Box> Providing tools
@@ -190,8 +190,8 @@ const Details = () => {
             endometriosis.
             <br />
             <br />
-            <Box color="#cb2e7c">Mental Health Support:</Box> Offering access
-            to therapists, counselors, or support groups for addressing mental
+            <Box color="#cb2e7c">Mental Health Support:</Box> Offering access to
+            therapists, counselors, or support groups for addressing mental
             health issues like postpartum depression, anxiety, or stress
             management.
             <br />

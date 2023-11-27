@@ -96,7 +96,7 @@ const ContactUs = () => {
                   fontWeight="200"
                   ml={2}
                 >
-                  +91 123 456 7890
+                  +91 9836 6724 48
                 </Text>
               </Flex>
               <Flex align="center">
@@ -106,7 +106,7 @@ const ContactUs = () => {
                   fontWeight="200"
                   ml={2}
                 >
-                  info@femwellcare.com
+                  femwellcare@gmail.com
                 </Text>
               </Flex>
             </>

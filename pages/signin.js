@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import Navbar from "@/components/Navbar";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
@@ -26,7 +27,7 @@ const SignIn = () => {
   return (
     <>
       <Head>
-        <title>Home | FemWellCare</title>
+        <title>Sign In | FemWellCare</title>
         <meta name="description" content="Your app description here" />
         <link rel="icon" href="/favicon.ico" />
         <link

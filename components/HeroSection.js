@@ -56,7 +56,7 @@ const HeroSection = () => {
             bgGradient="linear(45deg, #d62a7a, cyan.700)" // Added linear gradient
             bgClip="text"
           >
-            Your Women's Health Journey Starts Here
+            Your Women&apos;s Health Journey Starts Here
           </Heading>
           <Box
             fontSize="16px"
@@ -66,10 +66,10 @@ const HeroSection = () => {
             bgGradient="linear(45deg, cyan.700, #d62a7a)" // Added linear gradient
             bgClip="text"
           >
-            Connect with a women's health doctor whenever you need. You can
-            discuss issues in women's health like obstetrics, gynaecology,
-            OBGYN, or reproductive concerns. With telemedicine, women's health
-            services are available to you 24/7.
+            Connect with a women&apos;s health doctor whenever you need. You can
+            discuss issues in women&apos;s health like obstetrics, gynaecology,
+            OBGYN, or reproductive concerns. With telemedicine, women&apos;s
+            health services are available to you 24/7.
           </Box>
           <Button
             backgroundImage="linear(45deg, cyan.700, #d62a7a)"
@@ -86,7 +86,7 @@ const HeroSection = () => {
             Explore
           </Button>
         </Box>
-        <Box boxShadow="10px 10px 20px 10px rgba(0,0,0,.4)"> 
+        <Box boxShadow="10px 10px 20px 10px rgba(0,0,0,.4)">
           <Image
             style={imageStyles}
             src="/hero_pic.jpg"
