@@ -22,12 +22,12 @@ const Clinical = () => {
       <Navbar />
       <SubNavbar />
       <Box p={8}>
-        <Flex justify="center" align="center">
+        <Flex justify="center" flexDirection={{base:"column",md:"row"}} align="center">
           {/* Image on the left */}
           <Image src="/1.png" alt="Clinical Image" boxSize="300px" mr={8} />
 
           {/* Button on the right */}
-          <Button colorScheme="teal" size="lg">
+          <Button colorScheme="teal" size="lg" mt={10}>
             Where Patients and Doctors Connect
           </Button>
         </Flex>

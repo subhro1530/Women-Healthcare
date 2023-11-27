@@ -18,6 +18,9 @@ const SubNavbar = () => {
           icon={<FiChevronDown />}
           fontSize="20px"
           onClick={onToggle}
+          color="white"
+          _hover={{bgColor:"transparent"}}
+          bgColor="transparent"
           aria-label="Toggle Mobile Menu"
           variant="ghost"
           display={{ base: "block", md: "none" }}

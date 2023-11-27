@@ -120,7 +120,9 @@ const Navbar = () => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Menu</DrawerHeader>
+          <DrawerHeader fontWeight={200} fontSize={30} color="#d62b7a">
+            Menu
+          </DrawerHeader>
           <DrawerBody>
             <Box gap={3} display="flex" flexDirection="column">
               <NextLink href="/" passHref>
@@ -143,7 +145,7 @@ const Navbar = () => {
                   Clinical
                 </Link>
               </NextLink>
-              <NextLink href="/contact" passHref>
+              <NextLink href="/patient" passHref>
                 <Link
                   mb={2}
                   onClick={onClose}
@@ -163,6 +165,7 @@ const Navbar = () => {
                     _hover={{ textDecoration: "none", color: "teal.300" }}
                     transition="0.3s"
                     backgroundImage="linear(45deg, cyan.600, #d62a7a)"
+                    mr={4}
                   >
                     Log In
                   </Button>
