@@ -88,11 +88,15 @@ const HeroSection = () => {
         </Box>
         <Box boxShadow="10px 10px 20px 10px rgba(0,0,0,.4)">
           <Image
-            style={imageStyles}
             src="/hero_pic.jpg"
             height={400}
             width={600}
-          ></Image>
+            style={{
+              ...imageStyles,
+              animation: `${moveImage} 3s infinite`,
+            }}
+            alt="Hero Image"
+          />
         </Box>
       </Flex>
     </Box>

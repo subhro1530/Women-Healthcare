@@ -1,6 +1,6 @@
 // ContactUs.js
 import React, { useEffect, useState } from "react";
-import { Box, Heading, Text, Flex, Image, Link } from "@chakra-ui/react";
+import { Box, Heading, Text, Flex, Link } from "@chakra-ui/react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import {
@@ -8,7 +8,7 @@ import {
   FaPhone,
   FaEnvelope,
   FaTwitter,
-  FaFacebook,
+  FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
 
@@ -29,7 +29,7 @@ const ContactUs = () => {
     const getLocationDetails = async () => {
       try {
         const response = await fetch(
-          `https://api.opencagedata.com/geocode/v1/json?q=Delhi,India&key=85f3fbc56fc74f0c9fe9e5549abfc1c5`
+          `https://api.opencagedata.com/geocode/v1/json?q=22.573210+88.352320&key=85f3fbc56fc74f0c9fe9e5549abfc1c5`
         );
 
         if (!response.ok) {
@@ -42,6 +42,9 @@ const ContactUs = () => {
         if (results && results.length > 0) {
           const { formatted, geometry } = results[0];
           setLocationDetails({ formatted, geometry });
+
+          // Call createMap function with the obtained coordinates
+          createMap(geometry.lat, geometry.lng);
         } else {
           throw new Error("Location details not found");
         }
@@ -52,6 +55,20 @@ const ContactUs = () => {
 
     getLocationDetails();
   }, []);
+
+  const createMap = (latitude, longitude) => {
+    // Check if we're on the client side before creating the map
+    if (typeof window !== "undefined") {
+      const L = require("leaflet");
+      const map = L.map("map").setView([latitude, longitude], 15);
+
+      L.marker([latitude, longitude]).addTo(map);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "© OpenStreetMap contributors",
+      }).addTo(map);
+    }
+  };
 
   return (
     <>
@@ -135,7 +152,7 @@ const ContactUs = () => {
             <FaTwitter />
           </Link>
           <Link
-            href="#"
+            href="https://instagram.com/femwellcare?igshid=NzZlODBkYWE4Ng=="
             isExternal
             mx={2}
             fontSize={{ base: "2xl", md: "3xl" }}
@@ -143,7 +160,7 @@ const ContactUs = () => {
             color="#d52b79"
             _hover={{ color: "black" }}
           >
-            <FaFacebook />
+            <FaInstagram />
           </Link>
           <Link
             href="#"
@@ -157,17 +174,13 @@ const ContactUs = () => {
             <FaLinkedin />
           </Link>
         </Flex>
-
-        {/* Location Map Image */}
-        {locationDetails && (
-          <Flex justify="center" mt={8}>
-            <Image
-              src={`https://via.placeholder.com/600x400?text=Map+Image`} // Placeholder image, replace with your map image
-              alt="Delhi Map"
-              boxSize={{ base: "80%", md: "70%" }}
-            />
-          </Flex>
-        )}
+        {/* Location Map */}
+        <Box height="400px" width="80%" mt={8} mx="auto" overflow="hidden">
+          <Box
+            id="map"
+            style={{ width: "100%", height: "100%", position: "relative" }}
+          />
+        </Box>
       </Box>
       <Footer />
     </>
