@@ -143,15 +143,6 @@ const Footer = () => {
         <p>
           &copy; {new Date().getFullYear()} FemWellCare. All rights reserved.
         </p>
-        <p>Created by</p>
-        <Link
-          href="https://acodernamedsubhro.web.app/"
-          _hover={{ textDecoration: "none", color: "skyblue" }}
-          transition="0.3s"
-          color="cyan.700"
-        >
-          ACNS
-        </Link>
       </Box>
     </Box>
   );
