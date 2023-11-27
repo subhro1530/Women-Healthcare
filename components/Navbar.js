@@ -80,7 +80,7 @@ const Navbar = () => {
             Clinical
           </Link>
         </NextLink>
-        <NextLink href="/contact" passHref>
+        <NextLink href="/patient" passHref>
           <Link
             mr={4}
             _hover={{ textDecoration: "none", color: "teal.300" }}
