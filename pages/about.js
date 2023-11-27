@@ -40,12 +40,19 @@ const About = () => {
             alt="About Image"
             boxSize={{ base: "100%", md: "57%" }}
             mb={{ base: 6, md: 0 }}
+            borderRadius={20}
+            boxShadow="5px 5px 10px 10px rgba(0,0,0,.2)"
           />
 
           {/* Text on the right */}
           <Box ml={{ md: 8 }} mb={{ base: 8, md: 0 }}>
             {/* Heading */}
-            <Heading mb={6} fontSize={{ base: "2xl", md: "4xl" }}>
+            <Heading
+              mb={6}
+              fontSize={{ base: "4xl", md: "5xl" }}
+              fontWeight={300}
+              color="#d62b7a"
+            >
               About Us
             </Heading>
 
@@ -60,7 +67,7 @@ const About = () => {
             </Text>
 
             {/* Question */}
-            <Text fontWeight="bold" mb={4} fontSize="xl">
+            <Text fontStyle="italic"  fontSize="24px" mb={4} color="#d62b7a">
               Why did we build a healthcare app?
             </Text>
 
