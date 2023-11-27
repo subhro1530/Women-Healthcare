@@ -111,7 +111,7 @@ const ContactUs = () => {
                   fontWeight="200"
                   ml={2}
                 >
-                  {locationDetails.formatted}
+                  4 Amartalla Lane Kolkata 700001 Bura Bazar
                 </Text>
               </Flex>
               <Flex align="center" mb={2}>
