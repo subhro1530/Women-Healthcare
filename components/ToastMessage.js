@@ -4,7 +4,6 @@ import { Box, CloseButton } from "@chakra-ui/react";
 const ToastMessage = ({ message, onClose }) => {
   return (
     <Box
-      //   position="fixed"
       top="0"
       left="0"
       width="100%"

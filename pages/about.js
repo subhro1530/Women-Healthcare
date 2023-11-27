@@ -2,11 +2,19 @@
 import React from "react";
 import { Box, Heading, Image, Text, Flex } from "@chakra-ui/react";
 import Head from "next/head";
-import Navbar from "@/components/Navbar";
-import SubNavbar from "@/components/SubNavbar";
-import Footer from "@/components/Footer";
+import dynamic from "next/dynamic";
 
-const About = () => {
+const Navbar = dynamic(() => import("@/components/Navbar"), {
+  ssr: false,
+});
+const Footer = dynamic(() => import("@/components/Footer"), {
+  ssr: false,
+});
+const SubNavbar = dynamic(() => import("@/components/SubNavbar"), {
+  ssr: false,
+});
+
+const About = () => { 
   return (
     <>
       <Head>
