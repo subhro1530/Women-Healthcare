@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 const Patient = () => {
   return (
-    <Box scrollBehaviour="smooth">
+    <Box scrollBehaviour="smooth" overflowX="hidden">
       <Head>
         <title>Patient | FemWellCare</title>
         <meta name="description" content="Your app description here" />

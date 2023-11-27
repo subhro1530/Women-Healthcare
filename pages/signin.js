@@ -25,7 +25,7 @@ const SignIn = () => {
   const [password, setPassword] = useState("");
 
   return (
-    <Box scrollBehaviour="smooth">
+    <Box scrollBehaviour="smooth" overflowX="hidden">
       <Head>
         <title>Sign In | FemWellCare</title>
         <meta name="description" content="Your app description here" />

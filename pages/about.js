@@ -16,7 +16,7 @@ const SubNavbar = dynamic(() => import("@/components/SubNavbar"), {
 
 const About = () => { 
   return (
-    <Box scrollBehaviour="smooth">
+    <Box scrollBehaviour="smooth" overflowX="hidden">
       <Head>
         <title>About Us | FemWellCare</title>
         <meta name="description" content="Your app description here" />
