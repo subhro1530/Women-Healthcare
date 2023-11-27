@@ -126,13 +126,14 @@ const ContactUs = () => {
               </Flex>
               <Flex align="center">
                 <FaEnvelope />
-                <Text
+                <Link
+                  href="mailto:femwellcare@gmail.com"
                   fontSize={{ base: "lg", md: "xl" }}
                   fontWeight="200"
                   ml={2}
                 >
                   femwellcare@gmail.com
-                </Text>
+                </Link>
               </Flex>
             </>
           )}
