@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 const Clinical = () => {
   return (
-    <>
+    <Box scrollBehaviour="smooth">
       <Head>
         <title>Clinical | FemWellCare</title>
         <meta name="description" content="Your app description here" />
@@ -22,7 +22,11 @@ const Clinical = () => {
       <Navbar />
       <SubNavbar />
       <Box p={8}>
-        <Flex justify="center" flexDirection={{base:"column",md:"row"}} align="center">
+        <Flex
+          justify="center"
+          flexDirection={{ base: "column", md: "row" }}
+          align="center"
+        >
           {/* Image on the left */}
           <Image src="/1.png" alt="Clinical Image" boxSize="300px" mr={8} />
 
@@ -33,7 +37,7 @@ const Clinical = () => {
         </Flex>
       </Box>
       <Footer />
-    </>
+    </Box>
   );
 };
 

@@ -25,7 +25,7 @@ const SignIn = () => {
   const [password, setPassword] = useState("");
 
   return (
-    <>
+    <Box scrollBehaviour="smooth">
       <Head>
         <title>Sign In | FemWellCare</title>
         <meta name="description" content="Your app description here" />
@@ -74,7 +74,7 @@ const SignIn = () => {
             display="flex"
             border="1px solid cyan"
             borderRadius={50}
-            width={{base:"15%",md:"20%"}}
+            width={{ base: "15%", md: "20%" }}
             overflow="hidden"
             alignItems="center"
             mb={10}
@@ -88,7 +88,7 @@ const SignIn = () => {
             <Button
               bgColor="transparent"
               color="white"
-              display={{base:"none",md:"block"}}
+              display={{ base: "none", md: "block" }}
               // mb={4}
               _hover={{ bgColor: "transparent" }}
             >
@@ -154,7 +154,7 @@ const SignIn = () => {
         </Box>
       </Box>
       <Footer />
-    </>
+    </Box>
   );
 };
 

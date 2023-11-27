@@ -35,7 +35,7 @@ const Home = () => {
   const [showToast, setShowToast] = useState(true);
 
   return (
-    <div>
+    <Box scrollBehaviour="smooth">
       <Head>
         <title>Home | FemWellCare</title>
         <meta name="description" content="Your app description here" />
@@ -59,7 +59,7 @@ const Home = () => {
       <Details />
       <FAQ />
       <Footer />
-    </div>
+    </Box>
   );
 };
 

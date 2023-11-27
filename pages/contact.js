@@ -71,7 +71,7 @@ const ContactUs = () => {
   };
 
   return (
-    <>
+    <Box scrollBehaviour="smooth">
       <Head>
         <title>Contact Us | FemWellCare</title>
         <meta name="description" content="Your app description here" />
@@ -185,7 +185,7 @@ const ContactUs = () => {
         </Box>
       </Box>
       <Footer />
-    </>
+    </Box>
   );
 };
 

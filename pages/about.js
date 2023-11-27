@@ -16,7 +16,7 @@ const SubNavbar = dynamic(() => import("@/components/SubNavbar"), {
 
 const About = () => { 
   return (
-    <>
+    <Box scrollBehaviour="smooth">
       <Head>
         <title>About Us | FemWellCare</title>
         <meta name="description" content="Your app description here" />
@@ -67,7 +67,7 @@ const About = () => {
             </Text>
 
             {/* Question */}
-            <Text fontStyle="italic"  fontSize="24px" mb={4} color="#d62b7a">
+            <Text fontStyle="italic" fontSize="24px" mb={4} color="#d62b7a">
               Why did we build a healthcare app?
             </Text>
 
@@ -105,7 +105,7 @@ const About = () => {
         </Flex>
       </Box>
       <Footer />
-    </>
+    </Box>
   );
 };
 
