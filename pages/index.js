@@ -1,6 +1,7 @@
 // index.js
 import Head from "next/head";
 import { useState } from "react";
+import { Box } from "@chakra-ui/react";
 // import Navbar from "../components/Navbar";
 // import ToastMessage from "@/components/ToastMessage";
 // import HeroSection from "@/components/HeroSection";
