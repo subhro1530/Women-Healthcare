@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FemWellCare
+
+Welcome to FemWellCare - Your Comprehensive Women's Health and Wellness Solution. This app is designed to provide essential facilities like sanitation and other health-related assistance tailored specifically for women.
+
+## About
+
+FemWellCare is dedicated to addressing the unique healthcare needs of women. From access to sanitation facilities to providing essential health services, our app aims to improve the overall well-being of women everywhere.
+
+## Features
+
+- **Sanitation Services**: Access to clean and safe sanitation facilities for women.
+- **Health Assistance**: Provides health-related assistance including appointments with healthcare professionals.
+- **Wellness Resources**: Access to a variety of resources such as articles, videos, and tips for maintaining optimal health and wellness.
+- **Community Support**: Connect with other women for support and advice through community forums and groups.
+
+## How it Works
+
+FemWellCare simplifies the process of accessing essential health and wellness services for women. Users can:
+
+1. **Register/Login**: Create an account or log in to access the app's features.
+2. **Explore Services**: Browse through available sanitation facilities and health assistance options.
+3. **Book Services**: Schedule appointments or request assistance as needed.
+4. **Engage with Community**: Participate in community forums and groups for support and advice.
 
 ## Getting Started
 
-First, run the development server:
+To get started with FemWellCare, simply visit the hosted version on Vercel:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[Visit FemWellCare](https://femwellcare.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Screenshots
+![image](https://github.com/subhro1530/femwellcare/assets/113383437/ec139d3a-626e-4f49-aa45-c47c770dd634)
+![image](https://github.com/subhro1530/femwellcare/assets/113383437/55cf75d4-a9d5-4888-88a0-42c019263604)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome! If you'd like to contribute to FemWellCare, feel free to submit a pull request.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Feedback
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Have feedback or suggestions? We'd love to hear from you! Please open an issue on GitHub.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the [MIT License](LICENSE).
